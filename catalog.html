@@ -5,38 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Товары под заказ в Скалея | SSE Scalea</title>
+    <title>Каталог окон и дверей в Скалея | SSE Scalea</title>
 
     <meta
         name="description"
-        content="Каталог товаров под заказ SSE Scalea. Окна, двери и другие решения для дома с доставкой и установкой в Scalea (CS)."
+        content="Каталог SSE Scalea: окна ПВХ, входные и межкомнатные двери, москитные сетки, персианы и товары под заказ в Scalea (CS)."
     >
 
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://ssescalea.it/order-catalog.html">
+    <link rel="canonical" href="https://ssescalea.it/catalog.html">
 
     <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ssescalea.it/order-catalog.html">
-
+    <meta property="og:url" content="https://ssescalea.it/catalog.html">
     <meta
         property="og:title"
-        content="Товары под заказ в Скалея | SSE Scalea"
+        content="Каталог окон и дверей в Скалея | SSE Scalea"
     >
-
     <meta
         property="og:description"
-        content="Каталог окон, дверей и других товаров под заказ SSE Scalea."
+        content="Окна ПВХ, двери, москитные сетки, персианы и другие товары SSE Scalea."
     >
-
     <meta
         property="og:image"
         content="https://ssescalea.it/111.png"
     >
-
     <meta property="og:site_name" content="SSE Scalea">
 
     <link rel="stylesheet" href="style.css">
@@ -48,7 +44,7 @@
 </head>
 
 
-<body data-page="order">
+<body data-page="catalog">
 
 
 <header>
@@ -93,27 +89,45 @@
 
     <nav class="main-nav">
 
-        <a href="index.html" data-i18n="nav_home">
+        <a
+            href="index.html"
+            data-i18n="nav_home"
+        >
             Главная
         </a>
 
-        <a href="catalog.html" data-i18n="nav_catalog">
+        <a
+            href="catalog.html"
+            data-i18n="nav_catalog"
+        >
             Каталог
         </a>
 
-        <a href="order-catalog.html" data-i18n="nav_catalog_order">
+        <a
+            href="order-catalog.html"
+            data-i18n="nav_catalog_order"
+        >
             Товары под заказ
         </a>
 
-        <a href="index.html#services" data-i18n="nav_services">
+        <a
+            href="index.html#services"
+            data-i18n="nav_services"
+        >
             Услуги
         </a>
 
-        <a href="about.html" data-i18n="nav_about">
+        <a
+            href="about.html"
+            data-i18n="nav_about"
+        >
             О компании
         </a>
 
-        <a href="contacts.html" data-i18n="nav_contacts">
+        <a
+            href="contacts.html"
+            data-i18n="nav_contacts"
+        >
             Контакты
         </a>
 
@@ -122,27 +136,45 @@
 
     <div class="menu-small">
 
-        <a href="index.html" data-i18n="nav_home">
+        <a
+            href="index.html"
+            data-i18n="nav_home"
+        >
             Главная
         </a>
 
-        <a href="catalog.html" data-i18n="nav_catalog">
+        <a
+            href="catalog.html"
+            data-i18n="nav_catalog"
+        >
             Каталог
         </a>
 
-        <a href="order-catalog.html" data-i18n="nav_catalog_order">
+        <a
+            href="order-catalog.html"
+            data-i18n="nav_catalog_order"
+        >
             Товары под заказ
         </a>
 
-        <a href="index.html#services" data-i18n="nav_services">
+        <a
+            href="index.html#services"
+            data-i18n="nav_services"
+        >
             Услуги
         </a>
 
-        <a href="about.html" data-i18n="nav_about">
+        <a
+            href="about.html"
+            data-i18n="nav_about"
+        >
             О компании
         </a>
 
-        <a href="contacts.html" data-i18n="nav_contacts">
+        <a
+            href="contacts.html"
+            data-i18n="nav_contacts"
+        >
             Контакты
         </a>
 
@@ -153,49 +185,185 @@
 
 <main>
 
-    <section class="order-catalog-page">
+    <section class="catalog-page">
 
-        <h1 data-i18n="order_title">
-            📄 Товары под заказ
+        <h1 data-i18n="catalog_title">
+            Товары
         </h1>
 
-        <p
-            class="order-subtitle"
-            data-i18n="order_subtitle"
-        >
-            Просмотрите каталог товаров, доступных под заказ
-        </p>
 
+        <!-- КАТЕГОРИИ -->
 
-        <div class="pdf-download">
+        <div class="catalog-categories">
 
-            <a
-                href="katalog-pod-zakaz.pdf"
-                download
-                class="pdf-btn"
-                data-i18n="order_download"
+            <button
+                class="cat-btn active"
+                data-category="all"
+                data-i18n="filter_all"
             >
-                📥 Скачать каталог (PDF)
-            </a>
+                Все
+            </button>
+
+            <button
+                class="cat-btn"
+                data-category="doors"
+                data-i18n="filter_doors"
+            >
+                Двери
+            </button>
+
+            <button
+                class="cat-btn"
+                data-category="windows"
+                data-i18n="filter_windows"
+            >
+                Окна
+            </button>
+
+            <button
+                class="cat-btn"
+                data-category="persiane"
+                data-i18n="filter_persiane"
+            >
+                Персианы
+            </button>
+
+            <button
+                class="cat-btn"
+                data-category="nets"
+                data-i18n="filter_nets"
+            >
+                Москитные сетки
+            </button>
 
         </div>
 
 
-        <div class="pdf-viewer">
+        <!-- ПОДКАТЕГОРИИ -->
 
-            <embed
-                src="katalog-pod-zakaz.pdf"
-                type="application/pdf"
-                width="100%"
-                height="750px"
-                title="Каталог товаров под заказ SSE Scalea"
+        <div
+            class="catalog-subcategories"
+            id="subcategories"
+        >
+
+            <div
+                class="subcategory-group"
+                data-parent="doors"
             >
 
+                <button
+                    class="subcat-btn"
+                    data-subcategory="doors-pvc"
+                    data-i18n="subcat_doors_pvc"
+                >
+                    Двери ПВХ
+                </button>
+
+                <button
+                    class="subcat-btn"
+                    data-subcategory="doors-mdf"
+                    data-i18n="subcat_doors_mdf"
+                >
+                    Двери МДФ
+                </button>
+
+                <button
+                    class="subcat-btn"
+                    data-subcategory="doors-ecoraido"
+                    data-i18n="subcat_doors_ecoraido"
+                >
+                    Двери EcoRaido
+                </button>
+
+                <button
+                    class="subcat-btn"
+                    data-subcategory="doors-interior"
+                    data-i18n="subcat_doors_interior"
+                >
+                    Межкомнатные двери
+                </button>
+
+            </div>
+
+
+            <div
+                class="subcategory-group"
+                data-parent="windows"
+                style="display:none;"
+            >
+
+                <button
+                    class="subcat-btn"
+                    data-subcategory="windows-pvc"
+                    data-i18n="subcat_windows_pvc"
+                >
+                    Окна ПВХ
+                </button>
+
+                <button
+                    class="subcat-btn"
+                    data-subcategory="windows-roller"
+                    data-i18n="subcat_windows_roller"
+                >
+                    Окна ПВХ + роллеты
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ТОВАРЫ -->
+
+        <div
+            class="catalog-grid"
+            id="catalogGrid"
+        >
         </div>
 
     </section>
 
 </main>
+
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+
+<div
+    class="modal-overlay"
+    id="modalOverlay"
+>
+
+    <div class="modal-panel">
+
+        <div class="modal-header">
+
+            <h2
+                id="modalTitle"
+                data-i18n="modal_title"
+            >
+                Размеры и цены
+            </h2>
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Закрыть"
+            >
+                ✕
+            </button>
+
+        </div>
+
+
+        <div
+            class="modal-body"
+            id="modalBody"
+        >
+        </div>
+
+    </div>
+
+</div>
 
 
 <footer>
@@ -335,6 +503,7 @@
 
 <script src="burger.js"></script>
 <script src="script.js"></script>
+<script src="catalog.js"></script>
 
 </body>
 </html>
