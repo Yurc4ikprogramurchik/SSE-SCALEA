@@ -303,7 +303,7 @@ const translations = {
 
         // ===== SEO TESTO =====
         seo_title: "Finestre e porte in Scalea — affidabilità e qualità da SSE",
-        seo_text1: "SSE offre un'ampia scelta di finestre e porte a Scalea e in tutta Italia. Lavoriamo con PVC, alluminio e legno, garantendo alta qualità ed efficienza energetica. I nostri clienti ci apprezzano per affidabilità, stile e prezzi accessibili. Installazione di porte d'ingresso, porte interne, finestre e zanzariere — tutto in un unico posto. Misurazione gratuita e consegna in tutta Scalea.",
+        seo_text1: "SSE offre un'ampia scelta di finestre e porte a Scalea e in tutta Italia. Lavoriamo con PVC, garantendo alta qualità ed efficienza energetica. I nostri clienti ci apprezzano per affidabilità, stile e prezzi accessibili. Installazione di porte d'ingresso, porte interne, finestre e zanzariere — tutto in un unico posto. Misurazione gratuita e consegna in tutta Scalea.",
         seo_text2: "Telai in PVC, porte blindate, finestre su misura. SSE — il vostro partner affidabile a Scalea.",
 
         // ===== FOOTER =====
