@@ -83,4 +83,20 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://ssescalea.it/order-catalog.html"/>
     </url>
 
+    <url>
+        <loc>https://ssescalea.it/reviews.html</loc>
+        <lastmod>2026-09-12</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ssescalea.it/reviews.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ssescalea.it/it/reviews.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ssescalea.it/reviews.html"/>
+    </url>
+
+    <url>
+        <loc>https://ssescalea.it/it/reviews.html</loc>
+        <lastmod>2026-09-12</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ssescalea.it/reviews.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ssescalea.it/it/reviews.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ssescalea.it/reviews.html"/>
+    </url>
+
 </urlset>
