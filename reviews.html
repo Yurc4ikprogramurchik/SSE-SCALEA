@@ -238,10 +238,6 @@
             padding: 22px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.09);
             border-bottom: 4px solid var(--primary);
-
-            /* ВАЖНО:
-               карточка больше не растягивается
-               на высоту соседних элементов */
             min-height: 0;
             height: auto;
         }
@@ -286,12 +282,6 @@
             line-height: 1.1;
         }
 
-        .review-date {
-            color: #999;
-            font-size: 11px;
-            margin-top: 5px;
-        }
-
         .review-text {
             color: #444;
             font-size: 14px;
@@ -305,19 +295,6 @@
             margin-top: 17px;
             padding-top: 12px;
             border-top: 1px solid #eee;
-        }
-
-
-        /* =========================
-           EMPTY REVIEWS
-        ========================= */
-
-        .no-reviews {
-            grid-column: 1 / -1;
-            text-align: center;
-            color: var(--gray);
-            padding: 25px;
-            font-size: 14px;
         }
 
 
@@ -462,9 +439,7 @@
     </p>
 
 
-    <!-- ======================================
-         ФОРМА СВЕРХУ
-    ======================================= -->
+    <!-- ФОРМА ОТЗЫВА -->
 
     <div class="review-form-box">
 
@@ -581,16 +556,10 @@
     </div>
 
 
-    <!-- ======================================
-         РАЗДЕЛИТЕЛЬ
-    ======================================= -->
-
     <div class="reviews-divider"></div>
 
 
-    <!-- ======================================
-         ОПУБЛИКОВАННЫЕ ОТЗЫВЫ
-    ======================================= -->
+    <!-- ОПУБЛИКОВАННЫЕ ОТЗЫВЫ -->
 
     <h2 class="published-title">
         Отзывы клиентов
@@ -604,44 +573,24 @@
     <div class="reviews-grid">
 
 
-        <!-- ==================================
-             ТЕСТОВЫЙ ОТЗЫВ ЮРЫ
-
-             Потом этот блок можно удалить.
-        =================================== -->
-
-        
-
-
-            
-
-
-        <!-- ==================================
-
-        НОВЫЕ ОТЗЫВЫ ВСТАВЛЯЕМ СЮДА.
-
-        Пример:
+        <!-- GOOGLE REVIEW — Aleks e -->
 
         <article class="review-card">
 
             <div class="review-header">
 
                 <div class="review-avatar">
-                    М
+                    A
                 </div>
 
                 <div class="review-person">
 
                     <div class="review-name">
-                        Mario Rossi
+                        Aleks e
                     </div>
 
                     <div class="review-stars">
                         ★★★★★
-                    </div>
-
-                    <div class="review-date">
-                        15 сентября 2026
                     </div>
 
                 </div>
@@ -649,16 +598,186 @@
             </div>
 
             <div class="review-text">
-                Текст отзыва клиента.
+                Заказал у Сергея окна, балконную дверь и входную дверь.
+                Все было сделано в срок, без задержек.
+                Окна поставили с сохранением деревянных жалюзей которые
+                были на старых окнах. Очень доволен и рекомендую!
             </div>
 
             <div class="review-source">
-                Отзыв клиента SSE Scalea
+                Отзыв из Google
             </div>
 
         </article>
 
-        =================================== -->
+
+        <!-- GOOGLE REVIEW — Suum Cuique -->
+
+        <article class="review-card">
+
+            <div class="review-header">
+
+                <div class="review-avatar">
+                    S
+                </div>
+
+                <div class="review-person">
+
+                    <div class="review-name">
+                        Suum Cuique
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="review-text">
+                Цены вне конкуренции. Купил сразу готовое окно в размер.
+            </div>
+
+            <div class="review-source">
+                Отзыв из Google
+            </div>
+
+        </article>
+
+
+        <!-- GOOGLE REVIEW — Lilya Koros -->
+
+        <article class="review-card">
+
+            <div class="review-header">
+
+                <div class="review-avatar">
+                    L
+                </div>
+
+                <div class="review-person">
+
+                    <div class="review-name">
+                        Lilya Koros
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="review-text">
+                Когда мы решили поставить новые окна у себя в квартире,
+                то нам посоветовали фирму SSE Safe...
+                Коллектив фирмы быстро отреагировал на нашу просьбу,
+                за,что им огромное спасибо. Работали быстро, слажено
+                и профессионально. Окна выполнены очень качественно,
+                шумоизоляция отличная, чему мы очень рады.
+                Огромная благодарность всем работникам и руководителям
+                этой фирмы. Процветания вам и благодарных вам клиентов.
+            </div>
+
+            <div class="review-source">
+                Отзыв из Google
+            </div>
+
+        </article>
+
+
+        <!-- GOOGLE REVIEW — Michael G -->
+
+        <article class="review-card">
+
+            <div class="review-header">
+
+                <div class="review-avatar">
+                    M
+                </div>
+
+                <div class="review-person">
+
+                    <div class="review-name">
+                        Michael G
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="review-text">
+                Если вы ищете оптимальное соотношение цены и качества окон
+                и дверей для вашего дома или квартиры, SSE — это то, что вам
+                нужно. Недавно мне установили две большие балконные двери,
+                одно окно в ванной и одно окно в спальне, и я очень доволен
+                результатом. Мой бюджет не был запредельно завышенными
+                ценами, которые я получал от других компаний, и качество
+                продукции нисколько не пострадало. Эти двери и окна с двойным
+                остеклением теперь будут обеспечивать мне комфорт и экономить
+                деньги как зимой, так и летом. Я настоятельно рекомендую эту
+                компанию для ваших потребностей в дверях, окнах, ставнях
+                и других подобных изделиях. Вы не пожалеете и сэкономите
+                много денег.
+            </div>
+
+            <div class="review-source">
+                Отзыв из Google
+            </div>
+
+        </article>
+
+
+        <!-- GOOGLE REVIEW — Richard Hudson -->
+
+        <article class="review-card">
+
+            <div class="review-header">
+
+                <div class="review-avatar">
+                    R
+                </div>
+
+                <div class="review-person">
+
+                    <div class="review-name">
+                        Richard Hudson
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="review-text">
+                Хотим выразить благодарность Владимиру и компании SSE
+                за качество обслуживания и работы, которую мы получили
+                при установке новых дверей и окон в нашей квартире в Скалеа.
+                SSE была четвертой компанией, у которой мы (только на
+                английском языке) получили смету, и единственной, где
+                в смете не было скрытых платежей, которые мы обнаружили
+                в других предложениях, изучая контракты с помощью
+                Google Lens 🤣. В случае с SSE цена была указана в смете,
+                и, да, работа была выполнена идеально! Три французские
+                двери и окно, а также электронные наружные рулонные ворота!
+                Прекрасная работа, выполненная в срок и по оговоренной цене!
+                Мы настоятельно рекомендуем Владимира и SSE!
+            </div>
+
+            <div class="review-source">
+                Отзыв из Google
+            </div>
+
+        </article>
 
 
     </div>
