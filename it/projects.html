@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>I nostri progetti | Porte, finestre e infissi a Scalea | SSE</title>
+
+    <meta name="description"
+          content="Scopri alcuni lavori realizzati da SSE Scalea: porte d'ingresso, finestre, portefinestre, porte interne e soluzioni su misura.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://ssescalea.it/it/projects.html">
+
+    <link rel="alternate"
+          hreflang="ru"
+          href="https://ssescalea.it/projects.html">
+
+    <link rel="alternate"
+          hreflang="it"
+          href="https://ssescalea.it/it/projects.html">
+
+    <link rel="alternate"
+          hreflang="x-default"
+          href="https://ssescalea.it/projects.html">
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           PROJECTS PAGE
+        ========================= */
+
+        .projects-page {
+            background: #f5f7fa;
+            padding: 55px 20px 80px;
+        }
+
+        .projects-container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .projects-header h1 {
+            color: #003366;
+            font-size: 42px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 12px;
+        }
+
+        .projects-header p {
+            color: #666;
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .projects-section {
+            margin-bottom: 65px;
+        }
+
+        .projects-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .projects-section-title {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 27px;
+        }
+
+        .projects-section-title h2 {
+            color: #003366;
+            font-size: 26px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .projects-section-title::before {
+            content: "";
+            width: 6px;
+            height: 31px;
+            background: #009846;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .projects-section-title::after {
+            content: "";
+            height: 1px;
+            background: #d9dfe6;
+            flex: 1;
+        }
+
+
+        /* =========================
+           GRID
+        ========================= */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+            transition: transform .25s ease, box-shadow .25s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* =========================
+           IMAGES
+        ========================= */
+
+        .project-image {
+            height: 330px;
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        /* =========================
+           CAPTION
+        ========================= */
+
+        .project-info {
+            padding: 15px 14px 17px;
+            text-align: center;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .project-info span {
+            color: #003366;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+
+        /* =========================
+           INTERIOR DOORS
+        ========================= */
+
+        .projects-grid.interior-grid {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 650px;
+        }
+
+
+        /* =========================
+           LIGHTBOX
+        ========================= */
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .9);
+            z-index: 99999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 94vw;
+            max-height: 90vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            right: 28px;
+            top: 18px;
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 300;
+            cursor: pointer;
+            background: none;
+            border: none;
+            z-index: 2;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 1050px) {
+
+            .projects-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 760px) {
+
+            .projects-page {
+                padding: 35px 14px 60px;
+            }
+
+            .projects-header {
+                margin-bottom: 40px;
+            }
+
+            .projects-header h1 {
+                font-size: 29px;
+            }
+
+            .projects-header p {
+                font-size: 15px;
+            }
+
+            .projects-section {
+                margin-bottom: 50px;
+            }
+
+            .projects-section-title h2 {
+                font-size: 19px;
+                white-space: normal;
+            }
+
+            .projects-grid,
+            .projects-grid.interior-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: none;
+                gap: 14px;
+            }
+
+            .project-image {
+                height: 270px;
+            }
+
+            .project-info {
+                padding: 11px 8px 13px;
+            }
+
+            .project-info span {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 470px) {
+
+            .projects-grid,
+            .projects-grid.interior-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-image {
+                height: 420px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body data-default-lang="it" data-page="projects">
+
+
+<!-- =================================================
+     HEADER
+================================================= -->
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-box">
+            <div class="logo-title">SSE</div>
+            <div class="logo-sub">SAFE SMART ENERGY</div>
+        </div>
+
+
+        <div class="header-right">
+
+            <div class="language-switcher">
+
+                <button class="lang-btn"
+                        type="button"
+                        onclick="window.location.href='/projects.html'">
+                    RU
+                </button>
+
+                <button class="lang-btn active"
+                        type="button">
+                    IT
+                </button>
+
+            </div>
+
+
+            <div class="menu_small_icon">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <nav class="main-nav">
+
+        <a href="./">Home</a>
+
+        <a href="catalog.html">
+            Catalogo
+        </a>
+
+        <a href="order-catalog.html">
+            Prodotti su ordinazione
+        </a>
+
+        <a href="./#services">
+            Servizi
+        </a>
+
+        <a href="about.html">
+            Chi siamo
+        </a>
+
+        <a href="projects.html">
+            I nostri progetti
+        </a>
+
+        <a href="reviews.html">
+            Recensioni
+        </a>
+
+        <a href="contacts.html">
+            Contatti
+        </a>
+
+    </nav>
+
+
+    <div class="menu-small">
+
+        <a href="./">
+            Home
+        </a>
+
+        <a href="catalog.html">
+            Catalogo
+        </a>
+
+        <a href="order-catalog.html">
+            Prodotti su ordinazione
+        </a>
+
+        <a href="./#services">
+            Servizi
+        </a>
+
+        <a href="about.html">
+            Chi siamo
+        </a>
+
+        <a href="projects.html">
+            I nostri progetti
+        </a>
+
+        <a href="reviews.html">
+            Recensioni
+        </a>
+
+        <a href="contacts.html">
+            Contatti
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =================================================
+     PROJECTS
+================================================= -->
+
+<main class="projects-page">
+
+<div class="projects-container">
+
+
+    <div class="projects-header">
+
+        <h1>I nostri progetti</h1>
+
+        <p>
+            Una selezione di lavori realizzati da SSE Scalea:
+            porte d'ingresso, finestre, portefinestre e porte interne
+            installate per i nostri clienti.
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         PORTE D'INGRESSO
+    ================================================= -->
+
+    <section class="projects-section">
+
+        <div class="projects-section-title">
+            <h2>Porte d'ingresso</h2>
+        </div>
+
+        <div class="projects-grid">
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-door-01.png"
+                         alt="Porta d'ingresso installata da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Porta d'ingresso</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-door-02.png"
+                         alt="Porta blindata installata da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Porta blindata</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-door-03.png"
+                         alt="Porta d'ingresso effetto legno SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Porta effetto legno</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-door-04.png"
+                         alt="Porta d'ingresso SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Porta d'ingresso</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-door-05.png"
+                         alt="Porta blindata moderna SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Porta blindata</span>
+                </div>
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FINESTRE E PORTEFINESTRE
+    ================================================= -->
+
+    <section class="projects-section">
+
+        <div class="projects-section-title">
+            <h2>Finestre e portefinestre</h2>
+        </div>
+
+        <div class="projects-grid">
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-01.png"
+                         alt="Portafinestra installata da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra in PVC</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-02.png"
+                         alt="Portafinestra con vista panoramica a Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra panoramica</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-03.png"
+                         alt="Infissi installati su edificio residenziale da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Infissi per edificio residenziale</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-04.png"
+                         alt="Finestra effetto legno installata da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Finestra effetto legno</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-05.png"
+                         alt="Portafinestra decorativa SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra decorativa</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-06.png"
+                         alt="Portafinestra con cassonetto installata da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra con cassonetto</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-07.png"
+                         alt="Finestra con tapparella SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Finestra con tapparella</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-08.png"
+                         alt="Portafinestra effetto legno SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra effetto legno</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-09.png"
+                         alt="Portafinestra bianca SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra bianca</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-10.png"
+                         alt="Portafinestra con tapparella installata da SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra con tapparella</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-11.png"
+                         alt="Portafinestra effetto rovere SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Portafinestra effetto rovere</span>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="../project-window-12.png"
+                         alt="Serramento su misura effetto legno SSE Scalea"
+                         loading="lazy">
+                </div>
+                <div class="project-info">
+                    <span>Serramento su misura</span>
+                </div>
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PORTE INTERNE
+    ================================================= -->
+
+    <section class="projects-section">
+
+        <div class="projects-section-title">
+            <h2>Porte interne</h2>
+        </div>
+
+        <div class="projects-grid interior-grid">
+
+
+            <article class="project-card">
+
+                <div class="project-image">
+                    <img src="../interior-doors-01.png"
+                         alt="Porte interne bianche installate da SSE Scalea"
+                         loading="lazy">
+                </div>
+
+                <div class="project-info">
+                    <span>Porte interne bianche</span>
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+</div>
+
+</main>
+
+
+<!-- =================================================
+     LIGHTBOX
+================================================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close"
+            id="lightboxClose"
+            type="button"
+            aria-label="Chiudi immagine">
+        ×
+    </button>
+
+    <img id="lightboxImage"
+         src=""
+         alt="">
+
+</div>
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-header">
+
+            <h2>
+                SEMPRE A VOSTRA DISPOSIZIONE
+            </h2>
+
+
+            <div class="footer-social">
+
+                <a class="social-link"
+                   href="https://www.facebook.com/profile.php?id=61571447750120"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <img src="../icons8-facebook-100.png"
+                         alt="Facebook">
+
+                </a>
+
+
+                <a class="social-link"
+                   href="https://t.me/SSE_Scalea"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <img src="../icons8-telegram-logo-101.png"
+                         alt="Telegram">
+
+                </a>
+
+
+                <a class="social-link"
+                   href="https://www.tiktok.com/@blindati.infissi"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <img src="../icons8-tiktok-100.png"
+                         alt="TikTok">
+
+                </a>
+
+
+                <a class="social-link"
+                   href="https://wa.me/393792275566"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <img src="../icons8-whatsapp-logo-100.png"
+                         alt="WhatsApp">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-line"></div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-left">
+
+                <div class="footer-logo-title">
+                    SSE
+                </div>
+
+                <div class="footer-logo-sub">
+                    SAFE SMART ENERGY
+                </div>
+
+                <div class="footer-copy">
+                    SSE © 2026. All rights reserved.
+                </div>
+
+            </div>
+
+
+            <div class="footer-center">
+
+                <div class="footer-address">
+                    Piazza Garibaldi, 8,<br>
+                    87029 Scalea (CS), Italia
+                </div>
+
+
+                <div class="footer-contacts">
+
+                    <a href="tel:+393792275566"
+                       class="footer-phone">
+                        📞 +39 379 227 55 66
+                    </a>
+
+
+                    <a href="mailto:bip.calabria@gmail.com"
+                       class="footer-email">
+                        ✉️ bip.calabria@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../burger.js"></script>
+<script src="../script.js"></script>
+
+
+<script>
+
+    const images = document.querySelectorAll(".project-image img");
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+
+    images.forEach(function(img) {
+
+        img.addEventListener("click", function() {
+
+            lightboxImage.src = this.src;
+            lightboxImage.alt = this.alt;
+
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+
+        });
+
+    });
+
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+
+    lightbox.addEventListener("click", function(e) {
+
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+
+    });
+
+
+    document.addEventListener("keydown", function(e) {
+
+        if (e.key === "Escape") {
+            closeLightbox();
+        }
+
+    });
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+
+    }
+
+</script>
+
+
+</body>
+</html>
