@@ -1,64 +1,60 @@
 <!DOCTYPE html>
+<html lang="ru">
 
-<html lang="it">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Catalogo finestre, porte e infissi a Scalea | SSE</title>
+    <title>Каталог окон и дверей в Скалея | SSE Scalea</title>
 
     <meta
-        content="Catalogo SSE Scalea: finestre in PVC, porte, infissi, zanzariere, persiane e prodotti su ordinazione a Scalea (CS)."
         name="description"
-    />
+        content="Каталог SSE Scalea: окна ПВХ, входные и межкомнатные двери, москитные сетки, персианы и товары под заказ в Scalea (CS)."
+    >
 
-    <meta content="index, follow" name="robots"/>
+    <meta name="robots" content="index, follow">
 
-    <link href="https://ssescalea.it/it/catalog.html" rel="canonical"/>
+    <link rel="canonical" href="https://ssescalea.it/catalog.html">
 
-    <!-- HREFLANG -->
-    <link
-        href="https://ssescalea.it/catalog.html"
-        hreflang="ru"
-        rel="alternate"
-    />
-    <link
-        href="https://ssescalea.it/it/catalog.html"
-        hreflang="it"
-        rel="alternate"
-    />
-    <link
-        href="https://ssescalea.it/catalog.html"
-        hreflang="x-default"
-        rel="alternate"
-    />
+    <!-- Language versions -->
+    <link rel="alternate" hreflang="ru" href="https://ssescalea.it/catalog.html">
+    <link rel="alternate" hreflang="it" href="https://ssescalea.it/it/catalog.html">
+    <link rel="alternate" hreflang="x-default" href="https://ssescalea.it/catalog.html">
 
-    <link href="../favicon.png" rel="icon" type="image/png"/>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Open Graph -->
-    <meta content="website" property="og:type"/>
-    <meta content="https://ssescalea.it/it/catalog.html" property="og:url"/>
-    <meta
-        content="Catalogo finestre, porte e infissi a Scalea | SSE"
-        property="og:title"
-    />
-    <meta
-        content="Catalogo SSE Scalea: finestre in PVC, porte, infissi, zanzariere, persiane e prodotti su ordinazione a Scalea (CS)."
-        property="og:description"
-    />
-    <meta content="https://ssescalea.it/111.png" property="og:image"/>
-    <meta content="SSE Scalea" property="og:site_name"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ssescalea.it/catalog.html">
 
-    <link href="../style.css" rel="stylesheet"/>
+    <meta
+        property="og:title"
+        content="Каталог окон и дверей в Скалея | SSE Scalea"
+    >
+
+    <meta
+        property="og:description"
+        content="Окна ПВХ, двери, москитные сетки, персианы и другие товары SSE Scalea."
+    >
+
+    <meta
+        property="og:image"
+        content="https://ssescalea.it/111.png"
+    >
+
+    <meta property="og:site_name" content="SSE Scalea">
+
+    <link rel="stylesheet" href="style.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
-    />
+    >
 </head>
 
 
-<body data-default-lang="it" data-page="catalog">
+<body data-page="catalog">
+
 
 <header>
 
@@ -69,28 +65,28 @@
             <div class="logo-sub">SAFE SMART ENERGY</div>
         </div>
 
+
         <div class="header-right">
 
-            <!-- LANGUAGE SWITCHER -->
             <div class="language-switcher">
 
                 <button
-                    class="lang-btn"
-                    type="button"
-                    onclick="window.location.href='/catalog.html'"
+                    class="lang-btn active"
+                    data-lang="ru"
                 >
                     RU
                 </button>
 
                 <button
-                    class="lang-btn active"
-                    data-lang="it"
+                    class="lang-btn"
                     type="button"
+                    onclick="window.location.href='/it/catalog.html'"
                 >
                     IT
                 </button>
 
             </div>
+
 
             <div class="menu_small_icon">
                 <div class="stick"></div>
@@ -103,43 +99,139 @@
     </div>
 
 
-    <!-- DESKTOP MENU -->
     <nav class="main-nav">
-    <a data-i18n="nav_home" href="./">Home</a>
-    <a data-i18n="nav_catalog" href="catalog.html">Catalogo</a>
-    <a data-i18n="nav_catalog_order" href="order-catalog.html">Prodotti su ordinazione</a>
-    <a data-i18n="nav_services" href="./#services">Servizi</a>
-    <a data-i18n="nav_about" href="about.html">Chi siamo</a>
-    <a href="projects.html">I nostri progetti</a>
-    <a data-i18n="nav_reviews" href="reviews.html">Recensioni</a>
-    <a data-i18n="nav_contacts" href="contacts.html">Contatti</a>
+
+    <a
+        href="index.html"
+        data-i18n="nav_home"
+    >
+        Главная
+    </a>
+
+    <a
+        href="catalog.html"
+        data-i18n="nav_catalog"
+    >
+        Каталог
+    </a>
+
+    <a
+        href="order-catalog.html"
+        data-i18n="nav_catalog_order"
+    >
+        Товары под заказ
+    </a>
+
+    <a
+        href="index.html#services"
+        data-i18n="nav_services"
+    >
+        Услуги
+    </a>
+
+    <a
+        href="about.html"
+        data-i18n="nav_about"
+    >
+        О компании
+    </a>
+
+    <a
+        href="projects.html"
+    >
+        Наши проекты
+    </a>
+
+    <a
+        href="reviews.html"
+        data-i18n="nav_reviews"
+    >
+        Отзывы
+    </a>
+
+    <a
+        href="contacts.html"
+        data-i18n="nav_contacts"
+    >
+        Контакты
+    </a>
+
 </nav>
 
 
-<!-- MOBILE MENU -->
 <div class="menu-small">
-    <a data-i18n="nav_home" href="./">Home</a>
-    <a data-i18n="nav_catalog" href="catalog.html">Catalogo</a>
-    <a data-i18n="nav_catalog_order" href="order-catalog.html">Prodotti su ordinazione</a>
-    <a data-i18n="nav_services" href="./#services">Servizi</a>
-    <a data-i18n="nav_about" href="about.html">Chi siamo</a>
-    <a href="projects.html">I nostri progetti</a>
-    <a data-i18n="nav_reviews" href="reviews.html">Recensioni</a>
-    <a data-i18n="nav_contacts" href="contacts.html">Contatti</a>
+
+    <a
+        href="index.html"
+        data-i18n="nav_home"
+    >
+        Главная
+    </a>
+
+    <a
+        href="catalog.html"
+        data-i18n="nav_catalog"
+    >
+        Каталог
+    </a>
+
+    <a
+        href="order-catalog.html"
+        data-i18n="nav_catalog_order"
+    >
+        Товары под заказ
+    </a>
+
+    <a
+        href="index.html#services"
+        data-i18n="nav_services"
+    >
+        Услуги
+    </a>
+
+    <a
+        href="about.html"
+        data-i18n="nav_about"
+    >
+        О компании
+    </a>
+
+    <a
+        href="projects.html"
+    >
+        Наши проекты
+    </a>
+
+    <a
+        href="reviews.html"
+        data-i18n="nav_reviews"
+    >
+        Отзывы
+    </a>
+
+    <a
+        href="contacts.html"
+        data-i18n="nav_contacts"
+    >
+        Контакты
+    </a>
+
 </div>
 
 </header>
 
 
 <main>
+
     <section class="catalog-page">
 
         <h1 data-i18n="catalog_title">
-            Prodotti
+            Товары
         </h1>
 
 
-        <!-- CATEGORIE -->
+        <!-- КАТЕГОРИИ -->
+
         <div class="catalog-categories">
 
             <button
@@ -147,7 +239,7 @@
                 data-category="all"
                 data-i18n="filter_all"
             >
-                Tutti
+                Все
             </button>
 
             <button
@@ -155,7 +247,7 @@
                 data-category="doors"
                 data-i18n="filter_doors"
             >
-                Porte
+                Двери
             </button>
 
             <button
@@ -163,7 +255,7 @@
                 data-category="windows"
                 data-i18n="filter_windows"
             >
-                Finestre
+                Окна
             </button>
 
             <button
@@ -171,7 +263,7 @@
                 data-category="persiane"
                 data-i18n="filter_persiane"
             >
-                Persiane
+                Персианы
             </button>
 
             <button
@@ -179,13 +271,14 @@
                 data-category="nets"
                 data-i18n="filter_nets"
             >
-                Zanzariere
+                Москитные сетки
             </button>
 
         </div>
 
 
-        <!-- SOTTOCATEGORIE -->
+        <!-- ПОДКАТЕГОРИИ -->
+
         <div
             class="catalog-subcategories"
             id="subcategories"
@@ -198,34 +291,34 @@
 
                 <button
                     class="subcat-btn"
-                    data-i18n="subcat_doors_pvc"
                     data-subcategory="doors-pvc"
+                    data-i18n="subcat_doors_pvc"
                 >
-                    Porte in PVC
+                    Двери ПВХ
                 </button>
 
                 <button
                     class="subcat-btn"
-                    data-i18n="subcat_doors_mdf"
                     data-subcategory="doors-mdf"
+                    data-i18n="subcat_doors_mdf"
                 >
-                    Porte in MDF
+                    Двери МДФ
                 </button>
 
                 <button
                     class="subcat-btn"
-                    data-i18n="subcat_doors_ecoraido"
                     data-subcategory="doors-ecoraido"
+                    data-i18n="subcat_doors_ecoraido"
                 >
-                    Porte EcoRaido
+                    Двери EcoRaido
                 </button>
 
                 <button
                     class="subcat-btn"
-                    data-i18n="subcat_doors_interior"
                     data-subcategory="doors-interior"
+                    data-i18n="subcat_doors_interior"
                 >
-                    Porte interne
+                    Межкомнатные двери
                 </button>
 
             </div>
@@ -239,18 +332,18 @@
 
                 <button
                     class="subcat-btn"
-                    data-i18n="subcat_windows_pvc"
                     data-subcategory="windows-pvc"
+                    data-i18n="subcat_windows_pvc"
                 >
-                    Finestre in PVC
+                    Окна ПВХ
                 </button>
 
                 <button
                     class="subcat-btn"
-                    data-i18n="subcat_windows_roller"
                     data-subcategory="windows-roller"
+                    data-i18n="subcat_windows_roller"
                 >
-                    Finestre in PVC con tapparelle
+                    Окна ПВХ + роллеты
                 </button>
 
             </div>
@@ -258,18 +351,21 @@
         </div>
 
 
-        <!-- PRODOTTI -->
+        <!-- ТОВАРЫ -->
+
         <div
             class="catalog-grid"
             id="catalogGrid"
-        ></div>
+        >
+        </div>
 
     </section>
 
 </main>
 
 
-<!-- FINESTRA MODALE -->
+<!-- МОДАЛЬНОЕ ОКНО -->
+
 <div
     class="modal-overlay"
     id="modalOverlay"
@@ -280,26 +376,28 @@
         <div class="modal-header">
 
             <h2
-                data-i18n="modal_title"
                 id="modalTitle"
+                data-i18n="modal_title"
             >
-                Misure e prezzi
+                Размеры и цены
             </h2>
 
             <button
-                aria-label="Chiudi"
                 class="modal-close"
                 id="modalClose"
+                aria-label="Закрыть"
             >
                 ✕
             </button>
 
         </div>
 
+
         <div
             class="modal-body"
             id="modalBody"
-        ></div>
+        >
+        </div>
 
     </div>
 
@@ -313,65 +411,65 @@
         <div class="footer-header">
 
             <h2 data-i18n="footer_title">
-                SEMPRE A VOSTRA DISPOSIZIONE
+                ВСЕГДА НА СВЯЗИ
             </h2>
 
 
             <div class="footer-social">
 
                 <a
-                    class="social-link"
                     href="https://www.facebook.com/profile.php?id=61571447750120"
-                    rel="noopener noreferrer"
+                    class="social-link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="Facebook"
                 >
                     <img
+                        src="icons8-facebook-100.png"
                         alt="Facebook SSE Scalea"
-                        src="../icons8-facebook-100.png"
-                    />
+                    >
                 </a>
 
 
                 <a
-                    class="social-link"
                     href="https://t.me/SSE_Scalea"
-                    rel="noopener noreferrer"
+                    class="social-link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="Telegram"
                 >
                     <img
+                        src="icons8-telegram-logo-101.png"
                         alt="Telegram SSE Scalea"
-                        src="../icons8-telegram-logo-101.png"
-                    />
+                    >
                 </a>
 
 
                 <a
-                    class="social-link"
                     href="https://www.tiktok.com/@blindati.infissi"
-                    rel="noopener noreferrer"
+                    class="social-link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="TikTok"
                 >
                     <img
+                        src="icons8-tiktok-100.png"
                         alt="TikTok SSE Scalea"
-                        src="../icons8-tiktok-100.png"
-                    />
+                    >
                 </a>
 
 
                 <a
-                    class="social-link"
                     href="https://wa.me/393792275566"
-                    rel="noopener noreferrer"
+                    class="social-link"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="WhatsApp"
                 >
                     <img
+                        src="icons8-whatsapp-logo-100.png"
                         alt="WhatsApp SSE Scalea"
-                        src="../icons8-whatsapp-logo-100.png"
-                    />
+                    >
                 </a>
 
             </div>
@@ -414,15 +512,15 @@
                 <div class="footer-contacts">
 
                     <a
-                        class="footer-phone"
                         href="tel:+393792275566"
+                        class="footer-phone"
                     >
                         📞 +39 379 227 55 66
                     </a>
 
                     <a
-                        class="footer-email"
                         href="mailto:bip.calabria@gmail.com"
+                        class="footer-email"
                     >
                         ✉️ bip.calabria@gmail.com
                     </a>
@@ -430,6 +528,7 @@
                 </div>
 
             </div>
+
 
             <div class="footer-right"></div>
 
@@ -440,8 +539,8 @@
 </footer>
 
 
-<script src="../burger.js"></script>
-<script src="../script.js"></script>
+<script src="burger.js"></script>
+<script src="script.js"></script>
 <script src="catalog.js"></script>
 
 </body>
