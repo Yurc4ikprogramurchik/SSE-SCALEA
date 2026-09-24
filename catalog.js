@@ -1,109 +1,109 @@
 // =========================================
-// SSE SCALEA — КАТАЛОГ RU
+// SSE SCALEA — CATALOGO IT
 // =========================================
 
 const products = [
-    // ДВЕРИ ПВХ
-    { id: 1, category: "doors", subcategory: "doors-pvc", price: "€600", size: "120x210 см", img: "door-pvc-1.jpg", name: "Дверь ПВХ" },
-    { id: 2, category: "doors", subcategory: "doors-pvc", price: "€500", size: "87x210 см", img: "door-pvc-2.jpg", name: "Дверь ПВХ" },
-    { id: 3, category: "doors", subcategory: "doors-pvc", price: "€500", size: "90x210 см", img: "door-pvc-3.jpg", name: "Дверь ПВХ" },
-    { id: 23, category: "doors", subcategory: "doors-pvc", price: "€500", size: "90x210 см", img: "door-pvc-4.jpg", name: "Дверь ПВХ" },
+    // PORTE PVC
+    { id: 1, category: "doors", subcategory: "doors-pvc", price: "€600", size: "120x210 cm", img: "../door-pvc-1.jpg", name: "Porta in PVC" },
+    { id: 2, category: "doors", subcategory: "doors-pvc", price: "€500", size: "87x210 cm", img: "../door-pvc-2.jpg", name: "Porta in PVC" },
+    { id: 3, category: "doors", subcategory: "doors-pvc", price: "€500", size: "90x210 cm", img: "../door-pvc-3.jpg", name: "Porta in PVC" },
+    { id: 23, category: "doors", subcategory: "doors-pvc", price: "€500", size: "90x210 cm", img: "../door-pvc-4.jpg", name: "Porta in PVC" },
 
-    // ДВЕРИ МДФ
-    { id: 4, category: "doors", subcategory: "doors-mdf", price: "€600", size: "102x216 см", img: "door-mdf-1.jpg", name: "Дверь МДФ" },
-    { id: 5, category: "doors", subcategory: "doors-mdf", price: "€700", size: "92x214 см", img: "door-mdf-2.jpg", name: "Дверь МДФ" },
-    { id: 6, category: "doors", subcategory: "doors-mdf", price: "€600", size: "102x216 см", img: "door-mdf-3.jpg", name: "Дверь МДФ" },
-    { id: 7, category: "doors", subcategory: "doors-mdf", price: "€600", size: "96x216 см", img: "door-mdf-4.jpg", name: "Дверь МДФ" },
-    { id: 8, category: "doors", subcategory: "doors-mdf", price: "€950", size: "82x216 см", img: "door-mdf-5.jpg", name: "Дверь МДФ с электронным замком" },
+    // PORTE MDF
+    { id: 4, category: "doors", subcategory: "doors-mdf", price: "€600", size: "102x216 cm", img: "../door-mdf-1.jpg", name: "Porta in MDF" },
+    { id: 5, category: "doors", subcategory: "doors-mdf", price: "€700", size: "92x214 cm", img: "../door-mdf-2.jpg", name: "Porta in MDF" },
+    { id: 6, category: "doors", subcategory: "doors-mdf", price: "€600", size: "102x216 cm", img: "../door-mdf-3.jpg", name: "Porta in MDF" },
+    { id: 7, category: "doors", subcategory: "doors-mdf", price: "€600", size: "96x216 cm", img: "../door-mdf-4.jpg", name: "Porta in MDF" },
+    { id: 8, category: "doors", subcategory: "doors-mdf", price: "€950", size: "82x216 cm", img: "../door-mdf-5.jpg", name: "Porta in MDF con serratura elettronica" },
 
-    // ДВЕРИ ECORAIDO
-    { id: 9, category: "doors", subcategory: "doors-ecoraido", price: "€850", size: "120x210 см", img: "door-eco-1.jpg", name: "Дверь EcoRaido" },
-    { id: 10, category: "doors", subcategory: "doors-ecoraido", price: "€500", size: "90x210 см", img: "door-eco-2.jpg", name: "Дверь EcoRaido" },
-    { id: 11, category: "doors", subcategory: "doors-ecoraido", price: "€1100", size: "120x210 см", img: "door-eco-4.jpg", name: "Дверь EcoRaido с электронным замком" },
+    // PORTE ECORAIDO
+    { id: 9, category: "doors", subcategory: "doors-ecoraido", price: "€850", size: "120x210 cm", img: "../door-eco-1.jpg", name: "Porta EcoRaido" },
+    { id: 10, category: "doors", subcategory: "doors-ecoraido", price: "€500", size: "90x210 cm", img: "../door-eco-2.jpg", name: "Porta EcoRaido" },
+    { id: 11, category: "doors", subcategory: "doors-ecoraido", price: "€1100", size: "120x210 cm", img: "../door-eco-4.jpg", name: "Porta EcoRaido con serratura elettronica" },
 
-    // МЕЖКОМНАТНЫЕ ДВЕРИ
-    { id: 12, category: "doors", subcategory: "doors-interior", price: "€250", size: "70x210,80x210,90x210 см", img: "door-interior-1.jpg", name: "Межкомнатная дверь" },
-    { id: 13, category: "doors", subcategory: "doors-interior", price: "€250", size: "70x210,80x210,90x210 см", img: "door-interior-2.jpg", name: "Межкомнатная дверь" },
-    { id: 14, category: "doors", subcategory: "doors-interior", price: "€100", size: "80x210,90x210 см", img: "door-interior-3.jpg", name: "Межкомнатная дверь" },
-    { id: 15, category: "doors", subcategory: "doors-interior", price: "€250", size: "80x210 см", img: "door-interior-4.jpg", name: "Межкомнатная дверь" },
+    // PORTE INTERNE
+    { id: 12, category: "doors", subcategory: "doors-interior", price: "€250", size: "70x210,80x210,90x210 cm", img: "../door-interior-1.jpg", name: "Porta interna" },
+    { id: 13, category: "doors", subcategory: "doors-interior", price: "€250", size: "70x210,80x210,90x210 cm", img: "../door-interior-2.jpg", name: "Porta interna" },
+    { id: 14, category: "doors", subcategory: "doors-interior", price: "€100", size: "80x210,90x210 cm", img: "../door-interior-3.jpg", name: "Porta interna" },
+    { id: 15, category: "doors", subcategory: "doors-interior", price: "€250", size: "80x210 cm", img: "../door-interior-4.jpg", name: "Porta interna" },
 
-    // ОКНА ПВХ
-    { id: 16, category: "windows", subcategory: "windows-pvc", price: "В наличии", size: "", img: "window-pvc-1.jpg", name: "Окно ПВХ одностворчатое" },
-    { id: 17, category: "windows", subcategory: "windows-pvc", price: "В наличии", size: "", img: "window-pvc-2.jpg", name: "Окно ПВХ двухстворчатое" },
-    { id: 18, category: "windows", subcategory: "windows-pvc", price: "В наличии", size: "", img: "window-pvc-3.jpg", name: "Окно ПВХ балконное" },
+    // FINESTRE PVC
+    { id: 16, category: "windows", subcategory: "windows-pvc", price: "Disponibile", size: "", img: "../window-pvc-1.jpg", name: "Finestra in PVC ad un'anta" },
+    { id: 17, category: "windows", subcategory: "windows-pvc", price: "Disponibile", size: "", img: "../window-pvc-2.jpg", name: "Finestra in PVC a due ante" },
+    { id: 18, category: "windows", subcategory: "windows-pvc", price: "Disponibile", size: "", img: "../window-pvc-3.jpg", name: "Portafinestra in PVC" },
 
-    // ОКНА + РОЛЛЕТЫ
-    { id: 19, category: "windows", subcategory: "windows-roller", price: "Под заказ", size: "", img: "window-roller-1.jpg", name: "Окно ПВХ + роллета" },
+    // FINESTRE + TAPPARELLE
+    { id: 19, category: "windows", subcategory: "windows-roller", price: "Su ordinazione", size: "", img: "../window-roller-1.jpg", name: "Finestra in PVC con tapparella" },
 
-    // ПЕРСИАНЫ
-    { id: 21, category: "persiane", subcategory: "persiane-all", price: "Под заказ", size: "", img: "persiane-1.jpg", name: "Алюминиевая персиана" },
+    // PERSIANE
+    { id: 21, category: "persiane", subcategory: "persiane-all", price: "Su ordinazione", size: "", img: "../persiane-1.jpg", name: "Persiana in alluminio" },
 
-    // МОСКИТНЫЕ СЕТКИ
-    { id: 22, category: "nets", subcategory: "nets-all", price: "Под заказ", size: "", img: "net-1.jpg", name: "Москитная сетка" }
+    // ZANZARIERE
+    { id: 22, category: "nets", subcategory: "nets-all", price: "Su ordinazione", size: "", img: "../net-1.jpg", name: "Zanzariera" }
 ];
 
 
 // =========================================
-// РАЗМЕРЫ И ЦЕНЫ
+// MISURE E PREZZI
 // =========================================
 
 const sizeData = {
-    "Окно ПВХ одностворчатое": [
-        { size: "90 х 220 см", price: "€400" },
-        { size: "80x230 см", price: "€350" },
-        { size: "80x140 см", price: "€250" },
-        { size: "80x110 см", price: "€200" },
-        { size: "70x220 см", price: "€250" },
-        { size: "60x120 см", price: "€180" },
-        { size: "52x120 см", price: "€160" },
-        { size: "50x117,5 см", price: "€160" }
+    "Finestra in PVC ad un'anta": [
+        { size: "90 x 220 cm", price: "€400" },
+        { size: "80x230 cm", price: "€350" },
+        { size: "80x140 cm", price: "€250" },
+        { size: "80x110 cm", price: "€200" },
+        { size: "70x220 cm", price: "€250" },
+        { size: "60x120 cm", price: "€180" },
+        { size: "52x120 cm", price: "€160" },
+        { size: "50x117,5 cm", price: "€160" }
     ],
 
-    "Окно ПВХ двухстворчатое": [
-        { size: "150x130 см", price: "€300" },
-        { size: "130x140 см", price: "€300" },
-        { size: "140x140 см", price: "€300" },
-        { size: "120x140 см", price: "€250" },
-        { size: "100x140 см", price: "€230" },
-        { size: "118x148 см", price: "€250" }
+    "Finestra in PVC a due ante": [
+        { size: "150x130 cm", price: "€300" },
+        { size: "130x140 cm", price: "€300" },
+        { size: "140x140 cm", price: "€300" },
+        { size: "120x140 cm", price: "€250" },
+        { size: "100x140 cm", price: "€230" },
+        { size: "118x148 cm", price: "€250" }
     ],
 
-    "Окно ПВХ балконное": [
-        { size: "160x230 см", price: "€700" },
-        { size: "140x230 см", price: "€600" },
-        { size: "140x200 см", price: "€550" },
-        { size: "130x220 см", price: "€500" },
-        { size: "120x220 см", price: "€450" },
-        { size: "100x230 см", price: "€400" }
+    "Portafinestra in PVC": [
+        { size: "160x230 cm", price: "€700" },
+        { size: "140x230 cm", price: "€600" },
+        { size: "140x200 cm", price: "€550" },
+        { size: "130x220 cm", price: "€500" },
+        { size: "120x220 cm", price: "€450" },
+        { size: "100x230 cm", price: "€400" }
     ]
 };
 
 
 // =========================================
-// ТЕКСТЫ КАТАЛОГА RU
+// TESTI CATALOGO IT
 // =========================================
 
 function getCategoryLabel(category) {
     const labels = {
-        doors: "Двери",
-        windows: "Окна",
-        persiane: "Персианы",
-        nets: "Москитные сетки"
+        doors: "Porte",
+        windows: "Finestre",
+        persiane: "Persiane",
+        nets: "Zanzariere"
     };
 
     return labels[category] || category;
 }
 
 function getBadgeText() {
-    return "🛠️ Изготовление под заказ";
+    return "🛠️ Prodotto su ordinazione";
 }
 
 function getBtnSizesText() {
-    return "📋 Размеры и цены";
+    return "📋 Misure e prezzi";
 }
 
 function getNoProductsText() {
-    return "Товары не найдены";
+    return "Nessun prodotto trovato";
 }
 
 
@@ -115,7 +115,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 
 // =========================================
-// ОТОБРАЖЕНИЕ ТОВАРОВ
+// VISUALIZZAZIONE PRODOTTI
 // =========================================
 
 function renderProducts(category, subcategory) {
@@ -174,7 +174,7 @@ function renderProducts(category, subcategory) {
                        target="_blank"
                        rel="noopener noreferrer"
                        title="Telegram">
-                        <img src="icons8-telegram-logo-101.png" alt="Telegram">
+                        <img src="../icons8-telegram-logo-101.png" alt="Telegram">
                     </a>
 
                     <a href="https://www.tiktok.com/@blindati.infissi"
@@ -182,7 +182,7 @@ function renderProducts(category, subcategory) {
                        target="_blank"
                        rel="noopener noreferrer"
                        title="TikTok">
-                        <img src="icons8-tiktok-100.png" alt="TikTok">
+                        <img src="../icons8-tiktok-100.png" alt="TikTok">
                     </a>
 
                     <a href="https://wa.me/393792275566"
@@ -190,7 +190,7 @@ function renderProducts(category, subcategory) {
                        target="_blank"
                        rel="noopener noreferrer"
                        title="WhatsApp">
-                        <img src="icons8-whatsapp-logo-100.png" alt="WhatsApp">
+                        <img src="../icons8-whatsapp-logo-100.png" alt="WhatsApp">
                     </a>
                 </div>
             </div>
@@ -248,7 +248,7 @@ function renderProducts(category, subcategory) {
 
 
 // =========================================
-// МОДАЛЬНОЕ ОКНО
+// FINESTRA MODALE
 // =========================================
 
 function openModal(productName) {
@@ -258,18 +258,17 @@ function openModal(productName) {
 
     if (!overlay || !title || !body) return;
 
-    title.textContent = productName + " — Размеры и цены";
+    title.textContent = productName + " — Misure e prezzi";
 
     const data = sizeData[productName];
 
     if (data) {
-
         let html = `
             <table class="size-table">
                 <thead>
                     <tr>
-                        <th>Размер</th>
-                        <th>Цена</th>
+                        <th>Misura</th>
+                        <th>Prezzo</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -293,7 +292,7 @@ function openModal(productName) {
 
     } else {
         body.innerHTML =
-            `<p>Информация о размерах отсутствует</p>`;
+            `<p>Informazioni sulle misure non disponibili</p>`;
     }
 
     overlay.classList.add("active");
@@ -310,7 +309,7 @@ function closeModal() {
 
 
 // =========================================
-// ЗАГРУЗКА СТРАНИЦЫ
+// CARICAMENTO PAGINA
 // =========================================
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -322,62 +321,46 @@ document.addEventListener("DOMContentLoaded", function () {
     document
         .getElementById("modalOverlay")
         ?.addEventListener("click", function (e) {
-
             if (e.target === this) {
                 closeModal();
             }
-
         });
 
 
     document.querySelectorAll(".cat-btn").forEach(btn => {
-
         btn.addEventListener("click", function () {
-
             const category = this.dataset.category;
 
             setActiveCategory(category);
             renderProducts(category, null);
-
         });
-
     });
 
 
     document.querySelectorAll(".subcat-btn").forEach(btn => {
-
         btn.addEventListener("click", function () {
-
             const subcategory = this.dataset.subcategory;
 
             setActiveSubcategory(subcategory);
-
         });
-
     });
 
 
-    const category =
-        urlParams.get("category") || "all";
-
-    const subcategory =
-        urlParams.get("subcategory") || null;
-
+    const category = urlParams.get("category") || "all";
+    const subcategory = urlParams.get("subcategory") || null;
 
     setActiveCategory(category);
-
 
     if (subcategory) {
         autoOpenSubcategory(subcategory);
     } else {
         renderProducts(category, null);
     }
-
 });
 
 
 // =========================================
-// КАТЕГОРИИ
+// CATEGORIE
 // =========================================
 
 const noSubcategories = [
@@ -389,21 +372,16 @@ const noSubcategories = [
 function setActiveCategory(category) {
 
     document.querySelectorAll(".cat-btn").forEach(btn => {
-
         btn.classList.toggle(
             "active",
             btn.dataset.category === category
         );
-
     });
-
 
     const subcategoriesContainer =
         document.getElementById("subcategories");
 
-    if (!subcategoriesContainer) {
-        return;
-    }
+    if (!subcategoriesContainer) return;
 
 
     if (
@@ -417,22 +395,14 @@ function setActiveCategory(category) {
             btn.classList.remove("active");
         });
 
-
-        const url =
-            new URL(window.location);
-
+        const url = new URL(window.location);
         url.searchParams.delete("subcategory");
 
-        window.history.pushState(
-            {},
-            "",
-            url
-        );
+        window.history.pushState({}, "", url);
 
     } else {
 
         subcategoriesContainer.style.display = "flex";
-
 
         document
             .querySelectorAll(".subcategory-group")
@@ -442,62 +412,37 @@ function setActiveCategory(category) {
                     group.dataset.parent === category
                         ? "flex"
                         : "none";
-
             });
-
     }
 
 
-    const url =
-        new URL(window.location);
+    const url = new URL(window.location);
 
-    url.searchParams.set(
-        "category",
-        category
-    );
+    url.searchParams.set("category", category);
 
-    window.history.pushState(
-        {},
-        "",
-        url
-    );
+    window.history.pushState({}, "", url);
 }
 
 
 function setActiveSubcategory(subcategory) {
 
     document.querySelectorAll(".subcat-btn").forEach(btn => {
-
         btn.classList.toggle(
             "active",
             btn.dataset.subcategory === subcategory
         );
-
     });
 
+    const url = new URL(window.location);
 
-    const url =
-        new URL(window.location);
+    url.searchParams.set("subcategory", subcategory);
 
-    url.searchParams.set(
-        "subcategory",
-        subcategory
-    );
-
-    window.history.pushState(
-        {},
-        "",
-        url
-    );
-
+    window.history.pushState({}, "", url);
 
     const category =
         url.searchParams.get("category") || "all";
 
-    renderProducts(
-        category,
-        subcategory
-    );
+    renderProducts(category, subcategory);
 }
 
 
@@ -505,44 +450,27 @@ function autoOpenSubcategory(subcategory) {
 
     let parentCategory = null;
 
-
     for (const product of products) {
 
         if (product.subcategory === subcategory) {
-
-            parentCategory =
-                product.category;
-
+            parentCategory = product.category;
             break;
         }
-
     }
-
 
     if (parentCategory) {
 
-        setActiveCategory(
-            parentCategory
-        );
-
+        setActiveCategory(parentCategory);
 
         document
             .querySelectorAll(".subcat-btn")
             .forEach(btn => {
 
-                if (
-                    btn.dataset.subcategory ===
-                    subcategory
-                ) {
+                if (btn.dataset.subcategory === subcategory) {
                     btn.classList.add("active");
                 }
-
             });
 
-
-        renderProducts(
-            parentCategory,
-            subcategory
-        );
+        renderProducts(parentCategory, subcategory);
     }
 }

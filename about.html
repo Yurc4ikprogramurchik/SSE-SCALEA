@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html lang="ru">
 
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-    <title>О компании SSE | Окна и двери в Скалея</title>
+    <title>Chi siamo | Finestre e porte a Scalea | SSE</title>
 
     <meta
+        content="SSE Scalea offre finestre, porte e infissi a Scalea (CS), con sopralluogo, rilievo misure, consegna e installazione professionale."
         name="description"
-        content="SSE Scalea — поставщик окон и дверей в Scalea (CS). Замеры, доставка, профессиональная установка и энергоэффективные решения для дома и бизнеса."
-    >
+    />
 
-    <meta name="robots" content="index, follow">
+    <meta content="index, follow" name="robots"/>
 
-    <link rel="canonical" href="https://ssescalea.it/about.html">
+    <link href="https://ssescalea.it/it/about.html" rel="canonical"/>
 
-    <!-- Language versions -->
-    <link rel="alternate" hreflang="ru" href="https://ssescalea.it/about.html">
-    <link rel="alternate" hreflang="it" href="https://ssescalea.it/it/about.html">
-    <link rel="alternate" hreflang="x-default" href="https://ssescalea.it/about.html">
+    <!-- HREFLANG -->
+    <link
+        href="https://ssescalea.it/about.html"
+        hreflang="ru"
+        rel="alternate"
+    />
+    <link
+        href="https://ssescalea.it/it/about.html"
+        hreflang="it"
+        rel="alternate"
+    />
+    <link
+        href="https://ssescalea.it/about.html"
+        hreflang="x-default"
+        rel="alternate"
+    />
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="../favicon.png" rel="icon" type="image/png"/>
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ssescalea.it/about.html">
-    <meta property="og:title" content="О компании SSE | Окна и двери в Скалея">
-
+    <meta content="website" property="og:type"/>
+    <meta content="https://ssescalea.it/it/about.html" property="og:url"/>
     <meta
+        content="Chi siamo | Finestre e porte a Scalea | SSE"
+        property="og:title"
+    />
+    <meta
+        content="SSE Scalea offre finestre, porte e infissi a Scalea (CS), con sopralluogo, rilievo misure, consegna e installazione professionale."
         property="og:description"
-        content="SSE Scalea — окна и двери, замеры, доставка и профессиональная установка в Scalea (CS)."
-    >
+    />
+    <meta content="https://ssescalea.it/112.jpg" property="og:image"/>
+    <meta content="SSE Scalea" property="og:site_name"/>
 
-    <meta property="og:image" content="https://ssescalea.it/112.jpg">
-    <meta property="og:site_name" content="SSE Scalea">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="../style.css" rel="stylesheet"/>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
-    >
+    />
 </head>
 
-<body data-page="about">
+
+<body data-default-lang="it" data-page="about">
 
 <header>
+
     <div class="header-top">
 
         <div class="logo-box">
@@ -54,19 +69,30 @@
             <div class="logo-sub">SAFE SMART ENERGY</div>
         </div>
 
+
         <div class="header-right">
 
+            <!-- LANGUAGE SWITCHER -->
             <div class="language-switcher">
-                <button class="lang-btn active" data-lang="ru">RU</button>
 
                 <button
                     class="lang-btn"
                     type="button"
-                    onclick="window.location.href='/it/about.html'"
+                    onclick="window.location.href='/about.html'"
+                >
+                    RU
+                </button>
+
+                <button
+                    class="lang-btn active"
+                    data-lang="it"
+                    type="button"
                 >
                     IT
                 </button>
+
             </div>
+
 
             <div class="menu_small_icon">
                 <div class="stick"></div>
@@ -75,27 +101,85 @@
             </div>
 
         </div>
+
     </div>
 
+
+    <!-- DESKTOP MENU -->
     <nav class="main-nav">
-        <a href="index.html" data-i18n="nav_home">Главная</a>
-        <a href="catalog.html" data-i18n="nav_catalog">Каталог</a>
-        <a href="order-catalog.html" data-i18n="nav_catalog_order">Товары под заказ</a>
-        <a href="index.html#services" data-i18n="nav_services">Услуги</a>
-        <a href="about.html" data-i18n="nav_about">О компании</a>
-        <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
-        <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
-    </nav>
 
-    <div class="menu-small">
-        <a href="index.html" data-i18n="nav_home">Главная</a>
-        <a href="catalog.html" data-i18n="nav_catalog">Каталог</a>
-        <a href="order-catalog.html" data-i18n="nav_catalog_order">Товары под заказ</a>
-        <a href="index.html#services" data-i18n="nav_services">Услуги</a>
-        <a href="about.html" data-i18n="nav_about">О компании</a>
-        <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
-        <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
-    </div>
+    <a data-i18n="nav_home" href="./">
+        Home
+    </a>
+
+    <a data-i18n="nav_catalog" href="catalog.html">
+        Catalogo
+    </a>
+
+    <a data-i18n="nav_catalog_order" href="order-catalog.html">
+        Prodotti su ordinazione
+    </a>
+
+    <a data-i18n="nav_services" href="./#services">
+        Servizi
+    </a>
+
+    <a data-i18n="nav_about" href="about.html">
+        Chi siamo
+    </a>
+
+    <a href="projects.html">
+        I nostri progetti
+    </a>
+
+    <a data-i18n="nav_reviews" href="reviews.html">
+        Recensioni
+    </a>
+
+    <a data-i18n="nav_contacts" href="contacts.html">
+        Contatti
+    </a>
+
+</nav>
+
+
+<!-- MOBILE MENU -->
+<div class="menu-small">
+
+    <a data-i18n="nav_home" href="./">
+        Home
+    </a>
+
+    <a data-i18n="nav_catalog" href="catalog.html">
+        Catalogo
+    </a>
+
+    <a data-i18n="nav_catalog_order" href="order-catalog.html">
+        Prodotti su ordinazione
+    </a>
+
+    <a data-i18n="nav_services" href="./#services">
+        Servizi
+    </a>
+
+    <a data-i18n="nav_about" href="about.html">
+        Chi siamo
+    </a>
+
+    <a href="projects.html">
+        I nostri progetti
+    </a>
+
+    <a data-i18n="nav_reviews" href="reviews.html">
+        Recensioni
+    </a>
+
+    <a data-i18n="nav_contacts" href="contacts.html">
+        Contatti
+    </a>
+
+</div>
+
 </header>
 
 
@@ -104,8 +188,9 @@
     <section class="about-page">
 
         <h1 data-i18n="about_title">
-            О компании
+            Chi siamo
         </h1>
+
 
         <div class="about-content">
 
@@ -116,28 +201,29 @@
                 </h2>
 
                 <p data-i18n="about_text1">
-                    Мы — поставщик качественных окон и дверей.
-                    Наша компания работает на итальянском рынке более 3 лет,
-                    предлагая надежные и энергоэффективные решения
-                    для частных и коммерческих объектов.
+                    Siamo fornitori di finestre e porte di qualità.
+                    La nostra azienda opera sul mercato italiano da oltre 3 anni,
+                    offrendo soluzioni affidabili ed efficienti dal punto di vista
+                    energetico per abitazioni e attività commerciali.
                 </p>
 
                 <p data-i18n="about_text2">
-                    Мы выполняем полный спектр услуг: от замеров
-                    и подготовки коммерческого предложения до доставки
-                    и профессиональной установки приобретенного изделия.
+                    Seguiamo il cliente in tutte le fasi: dal sopralluogo
+                    e rilievo delle misure alla preparazione del preventivo,
+                    fino alla consegna e all'installazione professionale
+                    del prodotto acquistato.
                 </p>
 
                 <p data-i18n="about_text3">
-                    Мы используем современные материалы и технологии,
-                    чтобы обеспечить теплоизоляцию, безопасность,
-                    энергоэффективность и долговечность окон и дверей.
+                    Utilizziamo materiali e tecnologie moderne per garantire
+                    isolamento termico, sicurezza, efficienza energetica
+                    e durata nel tempo.
                 </p>
 
                 <p data-i18n="about_text4">
-                    Наши клиенты ценят качество, надежность и стиль.
-                    Мы помогаем сделать каждый дом более комфортным
-                    и безопасным.
+                    I nostri clienti apprezzano qualità, affidabilità e design.
+                    Il nostro obiettivo è rendere ogni casa più confortevole
+                    e sicura.
                 </p>
 
             </div>
@@ -146,67 +232,76 @@
             <div class="about-image">
 
                 <img
-                    src="112.jpg"
-                    alt="SSE Scalea — окна и двери в Скалея"
+                    alt="SSE Scalea — finestre e porte a Scalea"
                     loading="lazy"
-                >
+                    src="../112.jpg"
+                />
 
             </div>
 
         </div>
 
 
+        <!-- VALUES -->
         <div class="about-values">
 
             <div class="value-card">
+
                 <span class="value-icon">🏆</span>
 
                 <h3 data-i18n="value1_title">
-                    Качество
+                    Qualità
                 </h3>
 
                 <p data-i18n="value1_desc">
-                    Европейские стандарты и сертификаты
+                    Standard e certificazioni europee
                 </p>
+
             </div>
 
 
             <div class="value-card">
+
                 <span class="value-icon">🔒</span>
 
                 <h3 data-i18n="value2_title">
-                    Надежность
+                    Affidabilità
                 </h3>
 
                 <p data-i18n="value2_desc">
-                    Долговечные материалы и фурнитура
+                    Materiali e ferramenta durevoli
                 </p>
+
             </div>
 
 
             <div class="value-card">
+
                 <span class="value-icon">💰</span>
 
                 <h3 data-i18n="value3_title">
-                    Лучшая цена
+                    Ottimo prezzo
                 </h3>
 
                 <p data-i18n="value3_desc">
-                    Хорошие цены без ущерба для качества
+                    Buon rapporto qualità-prezzo
                 </p>
+
             </div>
 
 
             <div class="value-card">
+
                 <span class="value-icon">⚡</span>
 
                 <h3 data-i18n="value4_title">
-                    Энергоэффективность
+                    Efficienza energetica
                 </h3>
 
                 <p data-i18n="value4_desc">
-                    Энергоэффективные решения для вашего дома
+                    Soluzioni efficienti per la vostra casa
                 </p>
+
             </div>
 
         </div>
@@ -223,64 +318,65 @@
         <div class="footer-header">
 
             <h2 data-i18n="footer_title">
-                ВСЕГДА НА СВЯЗИ
+                SEMPRE A VOSTRA DISPOSIZIONE
             </h2>
+
 
             <div class="footer-social">
 
                 <a
-                    href="https://www.facebook.com/profile.php?id=61571447750120"
                     class="social-link"
-                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=61571447750120"
                     rel="noopener noreferrer"
+                    target="_blank"
                     title="Facebook"
                 >
                     <img
-                        src="icons8-facebook-100.png"
                         alt="Facebook SSE Scalea"
-                    >
+                        src="../icons8-facebook-100.png"
+                    />
                 </a>
 
 
                 <a
-                    href="https://t.me/SSE_Scalea"
                     class="social-link"
-                    target="_blank"
+                    href="https://t.me/SSE_Scalea"
                     rel="noopener noreferrer"
+                    target="_blank"
                     title="Telegram"
                 >
                     <img
-                        src="icons8-telegram-logo-101.png"
                         alt="Telegram SSE Scalea"
-                    >
+                        src="../icons8-telegram-logo-101.png"
+                    />
                 </a>
 
 
                 <a
-                    href="https://www.tiktok.com/@blindati.infissi"
                     class="social-link"
-                    target="_blank"
+                    href="https://www.tiktok.com/@blindati.infissi"
                     rel="noopener noreferrer"
+                    target="_blank"
                     title="TikTok"
                 >
                     <img
-                        src="icons8-tiktok-100.png"
                         alt="TikTok SSE Scalea"
-                    >
+                        src="../icons8-tiktok-100.png"
+                    />
                 </a>
 
 
                 <a
-                    href="https://wa.me/393792275566"
                     class="social-link"
-                    target="_blank"
+                    href="https://wa.me/393792275566"
                     rel="noopener noreferrer"
+                    target="_blank"
                     title="WhatsApp"
                 >
                     <img
-                        src="icons8-whatsapp-logo-100.png"
                         alt="WhatsApp SSE Scalea"
-                    >
+                        src="../icons8-whatsapp-logo-100.png"
+                    />
                 </a>
 
             </div>
@@ -319,18 +415,19 @@
                     Piazza Garibaldi, 8, 87029 Scalea (CS), Italia
                 </div>
 
+
                 <div class="footer-contacts">
 
                     <a
-                        href="tel:+393792275566"
                         class="footer-phone"
+                        href="tel:+393792275566"
                     >
                         📞 +39 379 227 55 66
                     </a>
 
                     <a
-                        href="mailto:bip.calabria@gmail.com"
                         class="footer-email"
+                        href="mailto:bip.calabria@gmail.com"
                     >
                         ✉️ bip.calabria@gmail.com
                     </a>
@@ -349,8 +446,8 @@
 </footer>
 
 
-<script src="burger.js"></script>
-<script src="script.js"></script>
+<script src="../burger.js"></script>
+<script src="../script.js"></script>
 
 </body>
 </html>
