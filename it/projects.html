@@ -8,7 +8,7 @@
     <title>I nostri progetti | Porte, finestre e infissi a Scalea | SSE</title>
 
     <meta name="description"
-          content="Scopri alcuni lavori realizzati da SSE Scalea: porte d'ingresso, finestre, portefinestre, porte interne e soluzioni su misura.">
+          content="Progetti realizzati da SSE Scalea: porte d'ingresso, finestre, portefinestre, porte interne e strutture su misura a Scalea (CS), Italia.">
 
     <meta name="robots" content="index, follow">
 
@@ -66,13 +66,13 @@
             color: #666;
             font-size: 17px;
             line-height: 1.6;
-            max-width: 760px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
 
         /* =========================
-           SECTION
+           SECTIONS
         ========================= */
 
         .projects-section {
@@ -117,13 +117,14 @@
 
 
         /* =========================
-           GRID
+           PHOTO GRID
         ========================= */
 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 22px;
+            align-items: stretch;
         }
 
         .project-card {
@@ -131,7 +132,8 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
-            transition: transform .25s ease, box-shadow .25s ease;
+            transition: transform .25s ease,
+                        box-shadow .25s ease;
             cursor: pointer;
         }
 
@@ -142,38 +144,53 @@
 
 
         /* =========================
-           IMAGES
+           NORMAL IMAGES
+           FULL IMAGE - NO CROPPING
         ========================= */
 
         .project-image {
-            height: 330px;
+            height: 340px;
             background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
         }
 
         .project-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
         }
 
 
         /* =========================
-           CAPTION
+           TECHNICAL PROJECTS
         ========================= */
 
-        .project-info {
-            padding: 15px 14px 17px;
-            text-align: center;
-            border-top: 1px solid #f0f0f0;
+        .projects-grid.drawings-grid {
+            grid-template-columns: 1fr;
+            gap: 25px;
         }
 
-        .project-info span {
-            color: #003366;
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 1.4;
+        .drawing-card {
+            width: 100%;
+        }
+
+        .drawing-card .project-image {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .drawing-card .project-image img {
+            width: 100%;
+            height: auto;
+            max-height: 550px;
+            object-fit: contain;
         }
 
 
@@ -200,6 +217,7 @@
             align-items: center;
             justify-content: center;
             padding: 30px;
+            box-sizing: border-box;
         }
 
         .lightbox.active {
@@ -207,10 +225,11 @@
         }
 
         .lightbox img {
-            max-width: 94vw;
-            max-height: 90vh;
+            display: block;
             width: auto;
             height: auto;
+            max-width: 94vw;
+            max-height: 90vh;
             object-fit: contain;
             border-radius: 8px;
         }
@@ -222,6 +241,7 @@
             color: #ffffff;
             font-size: 42px;
             font-weight: 300;
+            line-height: 1;
             cursor: pointer;
             background: none;
             border: none;
@@ -280,16 +300,22 @@
                 gap: 14px;
             }
 
+            .projects-grid.drawings-grid {
+                grid-template-columns: 1fr;
+            }
+
             .project-image {
-                height: 270px;
+                height: 280px;
             }
 
-            .project-info {
-                padding: 11px 8px 13px;
+            .drawing-card .project-image {
+                min-height: 0;
+                height: auto;
+                padding: 10px;
             }
 
-            .project-info span {
-                font-size: 12px;
+            .drawing-card .project-image img {
+                max-height: none;
             }
 
         }
@@ -304,6 +330,14 @@
 
             .project-image {
                 height: 420px;
+            }
+
+            .projects-grid.drawings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .drawing-card .project-image {
+                height: auto;
             }
 
         }
@@ -361,33 +395,33 @@
 
     <nav class="main-nav">
 
-        <a href="./">Home</a>
+        <a href="/it/">Home</a>
 
-        <a href="catalog.html">
+        <a href="/it/catalog.html">
             Catalogo
         </a>
 
-        <a href="order-catalog.html">
+        <a href="/it/order-catalog.html">
             Prodotti su ordinazione
         </a>
 
-        <a href="./#services">
+        <a href="/it/#services">
             Servizi
         </a>
 
-        <a href="about.html">
+        <a href="/it/about.html">
             Chi siamo
         </a>
 
-        <a href="projects.html">
+        <a href="/it/projects.html">
             I nostri progetti
         </a>
 
-        <a href="reviews.html">
+        <a href="/it/reviews.html">
             Recensioni
         </a>
 
-        <a href="contacts.html">
+        <a href="/it/contacts.html">
             Contatti
         </a>
 
@@ -396,35 +430,33 @@
 
     <div class="menu-small">
 
-        <a href="./">
-            Home
-        </a>
+        <a href="/it/">Home</a>
 
-        <a href="catalog.html">
+        <a href="/it/catalog.html">
             Catalogo
         </a>
 
-        <a href="order-catalog.html">
+        <a href="/it/order-catalog.html">
             Prodotti su ordinazione
         </a>
 
-        <a href="./#services">
+        <a href="/it/#services">
             Servizi
         </a>
 
-        <a href="about.html">
+        <a href="/it/about.html">
             Chi siamo
         </a>
 
-        <a href="projects.html">
+        <a href="/it/projects.html">
             I nostri progetti
         </a>
 
-        <a href="reviews.html">
+        <a href="/it/reviews.html">
             Recensioni
         </a>
 
-        <a href="contacts.html">
+        <a href="/it/contacts.html">
             Contatti
         </a>
 
@@ -447,9 +479,10 @@
         <h1>I nostri progetti</h1>
 
         <p>
-            Una selezione di lavori realizzati da SSE Scalea:
-            porte d'ingresso, finestre, portefinestre e porte interne
-            installate per i nostri clienti.
+            Alcuni lavori realizzati da SSE Scalea:
+            porte d'ingresso, finestre, portefinestre,
+            strutture realizzate su misura
+            e porte interne.
         </p>
 
     </div>
@@ -471,11 +504,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-door-01.png"
-                         alt="Porta d'ingresso installata da SSE Scalea"
+                         alt="Porta d'ingresso SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Porta d'ingresso</span>
                 </div>
             </article>
 
@@ -483,11 +513,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-door-02.png"
-                         alt="Porta blindata installata da SSE Scalea"
+                         alt="Porta d'ingresso SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Porta blindata</span>
                 </div>
             </article>
 
@@ -495,11 +522,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-door-03.png"
-                         alt="Porta d'ingresso effetto legno SSE Scalea"
+                         alt="Porta d'ingresso SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Porta effetto legno</span>
                 </div>
             </article>
 
@@ -510,20 +534,14 @@
                          alt="Porta d'ingresso SSE Scalea"
                          loading="lazy">
                 </div>
-                <div class="project-info">
-                    <span>Porta d'ingresso</span>
-                </div>
             </article>
 
 
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-door-05.png"
-                         alt="Porta blindata moderna SSE Scalea"
+                         alt="Porta d'ingresso SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Porta blindata</span>
                 </div>
             </article>
 
@@ -549,11 +567,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-01.png"
-                         alt="Portafinestra installata da SSE Scalea"
+                         alt="Finestre e portefinestre SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra in PVC</span>
                 </div>
             </article>
 
@@ -561,11 +576,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-02.png"
-                         alt="Portafinestra con vista panoramica a Scalea"
+                         alt="Finestre e portefinestre SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra panoramica</span>
                 </div>
             </article>
 
@@ -573,11 +585,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-03.png"
-                         alt="Infissi installati su edificio residenziale da SSE Scalea"
+                         alt="Finestre SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Infissi per edificio residenziale</span>
                 </div>
             </article>
 
@@ -585,11 +594,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-04.png"
-                         alt="Finestra effetto legno installata da SSE Scalea"
+                         alt="Finestra SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Finestra effetto legno</span>
                 </div>
             </article>
 
@@ -597,47 +603,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-05.png"
-                         alt="Portafinestra decorativa SSE Scalea"
+                         alt="Portafinestra SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra decorativa</span>
-                </div>
-            </article>
-
-
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="../project-window-06.png"
-                         alt="Portafinestra con cassonetto installata da SSE Scalea"
-                         loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra con cassonetto</span>
-                </div>
-            </article>
-
-
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="../project-window-07.png"
-                         alt="Finestra con tapparella SSE Scalea"
-                         loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Finestra con tapparella</span>
-                </div>
-            </article>
-
-
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="../project-window-08.png"
-                         alt="Portafinestra effetto legno SSE Scalea"
-                         loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra effetto legno</span>
                 </div>
             </article>
 
@@ -645,11 +612,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-09.png"
-                         alt="Portafinestra bianca SSE Scalea"
+                         alt="Finestra e portafinestra SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra bianca</span>
                 </div>
             </article>
 
@@ -657,11 +621,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-10.png"
-                         alt="Portafinestra con tapparella installata da SSE Scalea"
+                         alt="Portafinestra SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra con tapparella</span>
                 </div>
             </article>
 
@@ -669,11 +630,8 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-11.png"
-                         alt="Portafinestra effetto rovere SSE Scalea"
+                         alt="Portafinestra SSE Scalea"
                          loading="lazy">
-                </div>
-                <div class="project-info">
-                    <span>Portafinestra effetto rovere</span>
                 </div>
             </article>
 
@@ -681,11 +639,53 @@
             <article class="project-card">
                 <div class="project-image">
                     <img src="../project-window-12.png"
-                         alt="Serramento su misura effetto legno SSE Scalea"
+                         alt="Struttura per finestra SSE Scalea"
                          loading="lazy">
                 </div>
-                <div class="project-info">
-                    <span>Serramento su misura</span>
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PROGETTI TECNICI
+    ================================================= -->
+
+    <section class="projects-section">
+
+        <div class="projects-section-title">
+            <h2>Progetti su misura</h2>
+        </div>
+
+        <div class="projects-grid drawings-grid">
+
+
+            <article class="project-card drawing-card">
+                <div class="project-image">
+                    <img src="../project-window-06.png"
+                         alt="Progetto tecnico di una struttura per finestre SSE Scalea"
+                         loading="lazy">
+                </div>
+            </article>
+
+
+            <article class="project-card drawing-card">
+                <div class="project-image">
+                    <img src="../project-window-07.png"
+                         alt="Progetto tecnico di una struttura per finestre SSE Scalea"
+                         loading="lazy">
+                </div>
+            </article>
+
+
+            <article class="project-card drawing-card">
+                <div class="project-image">
+                    <img src="../project-window-08.png"
+                         alt="Progetto tecnico di una struttura su misura SSE Scalea"
+                         loading="lazy">
                 </div>
             </article>
 
@@ -709,17 +709,11 @@
 
 
             <article class="project-card">
-
                 <div class="project-image">
                     <img src="../interior-doors-01.png"
-                         alt="Porte interne bianche installate da SSE Scalea"
+                         alt="Porte interne SSE Scalea"
                          loading="lazy">
                 </div>
-
-                <div class="project-info">
-                    <span>Porte interne bianche</span>
-                </div>
-
             </article>
 
 
@@ -737,7 +731,8 @@
      LIGHTBOX
 ================================================= -->
 
-<div class="lightbox" id="lightbox">
+<div class="lightbox"
+     id="lightbox">
 
     <button class="lightbox-close"
             id="lightboxClose"
@@ -776,7 +771,7 @@
                    rel="noopener noreferrer">
 
                     <img src="../icons8-facebook-100.png"
-                         alt="Facebook">
+                         alt="Facebook SSE Scalea">
 
                 </a>
 
@@ -787,7 +782,7 @@
                    rel="noopener noreferrer">
 
                     <img src="../icons8-telegram-logo-101.png"
-                         alt="Telegram">
+                         alt="Telegram SSE Scalea">
 
                 </a>
 
@@ -798,7 +793,7 @@
                    rel="noopener noreferrer">
 
                     <img src="../icons8-tiktok-100.png"
-                         alt="TikTok">
+                         alt="TikTok SSE Scalea">
 
                 </a>
 
@@ -809,7 +804,7 @@
                    rel="noopener noreferrer">
 
                     <img src="../icons8-whatsapp-logo-100.png"
-                         alt="WhatsApp">
+                         alt="WhatsApp SSE Scalea">
 
                 </a>
 
@@ -834,7 +829,7 @@
                 </div>
 
                 <div class="footer-copy">
-                    SSE © 2026. All rights reserved.
+                    SSE © 2026. Tutti i diritti riservati.
                 </div>
 
             </div>
@@ -878,11 +873,17 @@
 
 <script>
 
-    const images = document.querySelectorAll(".project-image img");
+    const images =
+        document.querySelectorAll(".project-image img");
 
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightboxImage");
-    const lightboxClose = document.getElementById("lightboxClose");
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const lightboxClose =
+        document.getElementById("lightboxClose");
 
 
     images.forEach(function(img) {
@@ -893,6 +894,7 @@
             lightboxImage.alt = this.alt;
 
             lightbox.classList.add("active");
+
             document.body.style.overflow = "hidden";
 
         });
@@ -900,30 +902,40 @@
     });
 
 
-    lightboxClose.addEventListener("click", closeLightbox);
+    lightboxClose.addEventListener(
+        "click",
+        closeLightbox
+    );
 
 
-    lightbox.addEventListener("click", function(e) {
+    lightbox.addEventListener(
+        "click",
+        function(e) {
 
-        if (e.target === lightbox) {
-            closeLightbox();
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+
         }
+    );
 
-    });
 
+    document.addEventListener(
+        "keydown",
+        function(e) {
 
-    document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                closeLightbox();
+            }
 
-        if (e.key === "Escape") {
-            closeLightbox();
         }
-
-    });
+    );
 
 
     function closeLightbox() {
 
         lightbox.classList.remove("active");
+
         document.body.style.overflow = "";
 
     }
