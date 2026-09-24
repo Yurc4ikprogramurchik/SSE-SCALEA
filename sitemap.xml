@@ -99,4 +99,20 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://ssescalea.it/reviews.html"/>
     </url>
 
+    <url>
+        <loc>https://ssescalea.it/projects.html</loc>
+        <lastmod>2026-09-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ssescalea.it/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ssescalea.it/it/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ssescalea.it/projects.html"/>
+    </url>
+
+    <url>
+        <loc>https://ssescalea.it/it/projects.html</loc>
+        <lastmod>2026-09-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ssescalea.it/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ssescalea.it/it/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ssescalea.it/projects.html"/>
+    </url>
+
 </urlset>
